@@ -3,85 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pali Connect – Bridge Cultures. Connect Minds.</title>
+  <title data-i18n="title">Bridging Cultures · Connecting Hearts</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header class="hero">
-    <div class="container hero-container">
-      <div class="hero-text">
-        <h1>Bridge Cultures.<br />Connect Minds.</h1>
-        <p class="subtitle">Learn. Teach. Exchange.</p>
-        <p class="description">
-          Meet Pali, your friendly cat guide! We connect Taiwanese students with U.S. teachers for English learning and cultural exchange—and help U.S. families explore Chinese language and Taiwanese culture with local tutors.
-        </p>
-        <div class="btn-group">
-          <a href="#" class="btn btn-student">🎓 I’m a Student – Join Now</a>
-          <a href="#" class="btn btn-teacher">👩‍🏫 I’m a Teacher – Sign Up</a>
-        </div>
-      </div>
-      <div class="hero-img">
-        <img src="pali-cat.png" alt="Pali the Cat Guide" />
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="logo" data-i18n="logo">Pali Connect</div>
+      <ul class="nav-tabs">
+        <li class="active"><a href="#" data-i18n="tab_about">About Us</a></li>
+        <li><a href="#" data-i18n="tab_courses">Courses</a></li>
+        <li><a href="#" data-i18n="tab_subscribe">Subscription</a></li>
+        <li><a href="#" data-i18n="tab_faq">FAQ</a></li>
+      </ul>
+      <div class="language-switcher">
+        <button onclick="setLanguage('en')" class="active">English</button>
+        <button onclick="setLanguage('zh')">中文</button>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="main-content">
-    <section class="card about">
-      <h2>🌱 More Than a Language Platform</h2>
-      <p>We believe language is more than words—it’s the key to understanding cultures, sharing stories, and building friendships.</p>
-      <ul>
-        <li>🇹🇼 Taiwanese students eager to explore English and the world.</li>
-        <li>🇺🇸 U.S. teachers and families excited to learn Chinese and Taiwanese culture.</li>
-      </ul>
-      <p>Here, learning happens in both directions. It’s not just a class. It’s a cultural adventure.</p>
-    </section>
-
-    <section class="card how-it-works">
-      <h2>🖇️ How It Works</h2>
-      <ol>
-        <li><strong>Sign Up</strong> – Create a free account as a student or teacher.</li>
-        <li><strong>Get Matched</strong> – We’ll pair you with the perfect teacher, student, or penpal.</li>
-        <li><strong>Learn & Share</strong> – Join online lessons or exchange letters—and explore a new culture together.</li>
-      </ol>
-      <p class="tip">🐾 Pali Tip: The more you share, the more you grow—both in language and friendship!</p>
-    </section>
-
-    <section class="card features">
-      <h2>✨ Why Choose Us?</h2>
-      <ul>
-        <li><strong>✅ Real Teachers. Real Culture.</strong> Learn from passionate native speakers who bring language to life.</li>
-        <li><strong>✅ Penpal Exchange Program</strong> Practice language through fun, guided penpal letters.</li>
-        <li><strong>✅ Safe & Friendly Platform</strong> Pali ensures every connection is verified and welcoming.</li>
-      </ul>
-    </section>
-
-    <section class="card marketplace">
-      <h2>🛍️ Our Cultural Marketplace</h2>
-      <p>🎨 Coming soon: Download Pali’s adorable stickers, cultural guides, and digital goodies to make your learning fun!</p>
-    </section>
-
-    <section class="card cta-section">
-      <div class="cta-box">
-        <h3>For Students</h3>
-        <p>Find your perfect teacher and start your English journey—fun, friendly, and inspiring!</p>
-        <a href="#" class="btn btn-student large">🎓 Join Now</a>
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="hero-content fade-in">
+        <div class="text">
+          <h1 data-i18n="slogan_main" class="slogan">“Where Language Becomes Friendship”</h1>
+          <p data-i18n="hero_desc">Our mission is to cross cultures through language, building real understanding and shared value.</p>
+          <ul class="features">
+            <li data-i18n="feature_1">🎯 Immersive Bilingual Classes</li>
+            <li data-i18n="feature_2">🌏 Global Cultural Exchange</li>
+            <li data-i18n="feature_3">📚 Professional Instructors & Engaging Materials</li>
+          </ul>
+        </div>
+        <div class="media">
+          <img src="images/kids_learning.jpg" alt="Happy Kids Learning" class="kids-photo" />
+        </div>
       </div>
-      <div class="cta-box">
-        <h3>For Teachers</h3>
-        <p>Share your language. Inspire young learners from Taiwan. Earn while making a difference.</p>
-        <a href="#" class="btn btn-teacher large">👩‍🏫 Sign Up</a>
+      
+    </section>
+    <!-- 產品介紹區塊 -->
+  <section class="card product-context">
+    <h2 data-i18n="product_title">🌟 Our Product Philosophy</h2>
+    <p data-i18n="product_intro">At Pali Connect, we integrate <strong>PAL</strong> (Playful and Adaptive Learning) and the <strong>STEAM</strong> concept to create a dynamic and engaging educational experience.</p>
+
+    <div class="concepts-grid">
+      <div class="concept-item">
+        <h3>🎲 PAL: Playful and Adaptive Learning</h3>
+        <p>We believe learning should be fun, personalized, and responsive to each student's pace and style, encouraging curiosity and creativity.</p>
+      </div>
+      <div class="concept-item">
+        <h3>🧪 STEAM Concept</h3>
+        <p>Integrating Science, Technology, Engineering, Arts, and Mathematics, our courses foster critical thinking, problem-solving, and innovation.</p>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ABOUT -->
+    <section class="card about-section fade-in">
+      <h2 data-i18n="about_title">🌱 More Than A Language Platform</h2>
+      <p data-i18n="about_slogan"><strong>“Connecting worlds with language, bridging gaps with understanding.”</strong></p>
+      <p data-i18n="about_p1">We believe language is more than words; through immersive learning and cultural exchange, we create a warm, safe, and inspiring space.</p>
+      <ul>
+        <li data-i18n="about_li1">🇹🇼 Taiwanese students eager to explore English and the world.</li>
+        <li data-i18n="about_li2">🇺🇸 American teachers and families passionate about learning Chinese and Taiwanese culture.</li>
+      </ul>
+      <p data-i18n="about_p2">Our mission is to build a true cultural bridge, where students and teachers learn and share together.</p>
+      <p data-i18n="about_p3">No matter your background, we hope you find joy and belonging here.</p>
+    </section>
+
+    <!-- TEACHERS -->
+    <section class="card teachers-section fade-in">
+      <h2 data-i18n="teachers_title">👩‍🏫 Meet Our Teachers</h2>
+      <div class="teachers-grid">
+        <div class="teacher-card">
+          <img src="images/teacher1.jpg" alt="Teacher Alice" />
+          <h3>Alice Chen</h3>
+          <p data-i18n="teacher_1_desc">Experienced bilingual instructor passionate about cultural exchange.</p>
+        </div>
+        <div class="teacher-card">
+          <img src="images/teacher2.jpg" alt="Teacher John" />
+          <h3>John Smith</h3>
+          <p data-i18n="teacher_2_desc">Native English speaker with 10+ years teaching Mandarin to kids.</p>
+        </div>
+        <div class="teacher-card">
+          <img src="images/teacher3.jpg" alt="Teacher Mei" />
+          <h3>Mei Lin</h3>
+          <p data-i18n="teacher_3_desc">Dedicated to creating fun and immersive learning experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section class="card feedback-section fade-in">
+      <h2 data-i18n="feedback_title">🧡 Student Feedback</h2>
+      <blockquote data-i18n="feedback_1">“My child started speaking English voluntarily and looks forward to every class!” — Xiaomei's Mom</blockquote>
+      <blockquote data-i18n="feedback_2">"My daughter not only learned Chinese, but made a best friend in Taiwan!" — Sarah, CA</blockquote>
+    </section>
+
+    <!-- STATS -->
+    <section class="card stats fade-in">
+      <h3 data-i18n="by_numbers_title">🔢 Key Figures</h3>
+      <div class="stats-grid">
+        <div><strong>14+</strong> <span data-i18n="stats_years">Years of Teaching Experience</span></div>
+        <div><strong>400+</strong> <span data-i18n="stats_schools">Partner Schools</span></div>
+        <div><strong>3K+</strong> <span data-i18n="stats_classrooms">Remote Classrooms Set Up</span></div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Pali Connect – Where language and culture meet.</p>
-    <p>📧 info@paliconnect.com | 🌏 Follow us @paliconnect</p>
-    <p>Ready to connect? Join free today.</p>
+    <div class="container footer-container">
+      <p data-i18n="footer_line1">🐾 Pali Connect – Connecting Worlds Through Language</p>
+      <p>📧 <a href="mailto:info@paliconnect.com">info@paliconnect.com</a> | 🌐 @paliconnect</p>
+    </div>
   </footer>
 
+  <script src="js/lang.js"></script>
 </body>
 </html>

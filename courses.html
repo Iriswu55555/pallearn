@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-i18n="title">橋接文化．連結心靈</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar container">
+    <div class="logo" data-i18n="logo">Pali Connect</div>
+    <ul class="nav-tabs">
+      <li class="active"><a href="about.html" data-i18n="tab_about">關於我們</a></li>
+      <li><a href="courses.html" data-i18n="tab_courses">課程介紹</a></li>
+      <li><a href="subscribe.html" data-i18n="tab_subscribe">訂閱方案</a></li>
+      <li><a href="faq.html" data-i18n="tab_faq">常見問題</a></li>
+    </ul>
+    <div class="language-switcher">
+      <button onclick="setLanguage('zh')" aria-label="切換中文">中文</button>
+      <button onclick="setLanguage('en')" aria-label="Switch to English">English</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Hero Image -->
+    <img src="images/hero-about.jpg" alt="About hero" class="hero-img">
+    <!-- Page-specific Content -->
+    <section class="card">
+      <h2 data-i18n="about_title">🌱 更多於語言平台</h2>
+      <p data-i18n="about_p1">我們相信語言不只是文字，而是理解文化、分享故事、建立友誼的鑰匙。</p>
+      <ul>
+        <li data-i18n="about_li1">🇹🇼 台灣學生熱衷於探索英語與世界。</li>
+        <li data-i18n="about_li2">🇺🇸 美國老師與家庭熱愛學習中文與台灣文化。</li>
+      </ul>
+      <p data-i18n="about_p2">這裡的學習是雙向的，不僅是上課，更是文化冒險。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer_line1">🐾 Pali Connect – 用語言連結世界</p>
+    <p>📧 <a href="mailto:info@paliconnect.com">info@paliconnect.com</a> | 🌐 Follow us @paliconnect</p>
+  </footer>
+
+  <script src="js/lang.js"></script>
+</body>
+</html>

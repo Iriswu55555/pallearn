@@ -1,287 +1,117 @@
-/* Reset & 基本設定 */
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
-  background: #f9fafb;
-  color: #333;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+      font-family: 'Nunito', sans-serif;
+      background-color: #FDF5E6;
+      margin: 0; padding: 0;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem 0;
+    }
+    header.hero {
+      background: linear-gradient(135deg, #A7C8A1 20%, #F9666A 100%);
+      color: white;
+      padding: 3rem 1rem;
+      border-radius: 0 0 3rem 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .hero-text {
+      flex: 1 1 50%;
+      padding-right: 1rem;
+    }
+    .hero-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .btn-group a {
+      display: inline-block;
+      margin-right: 1rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .btn-student {
+      background-color: #F9666A;
+    }
+    .btn-student:hover {
+      background-color: #e2555a;
+    }
+    .btn-teacher {
+      background-color: #A7C8A1;
+    }
+    .btn-teacher:hover {
+      background-color: #8bbf8c;
+    }
+    .hero-img img {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+    }
+    main.main-content .card {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    main.main-content h2 {
+      color: #F9666A;
+      margin-bottom: 1rem;
+    }
+    ul, ol {
+      margin-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    /* 語言切換按鈕 */
+    .language-switcher {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .language-switcher button {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      border-radius: 1.2rem;
+      border: 1.5px solid #F9666A;
+      background: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .language-switcher button:hover {
+      background-color: #F9666A;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #fff;
+      color: #888;
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
+    }
+    @media(max-width:768px){
+      header.hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text {
+        padding: 0;
+        margin-bottom: 1.5rem;
+      }
+      main.main-content .card {
+        margin: 1rem 0;
+      }
+    }
+s
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Hero 區塊 */
-.hero {
-  background: linear-gradient(135deg, #ffd3b6 0%, #6bc5b7 100%);
-  color: white;
-  padding: 80px 20px;
-}
-
-.hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-.hero-text {
-  flex: 1 1 400px;
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-weight: 900;
-  font-size: 3.6rem;
-  line-height: 1.1;
-  margin-bottom: 20px;
-}
-
-.subtitle {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-.description {
-  font-size: 1.125rem;
-  margin-bottom: 40px;
-  color: #f1f1f1dd;
-}
-
-.btn-group {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 18px 40px;
-  border-radius: 50px;
-  font-weight: 700;
-  text-decoration: none;
-  color: white;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
-  display: inline-block;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.btn-student {
-  background: linear-gradient(45deg, #ff7e5f, #feb47b);
-  box-shadow: 0 8px 20px rgba(255,126,95,0.4);
-}
-
-.btn-student:hover {
-  background: linear-gradient(45deg, #feb47b, #ff7e5f);
-  transform: scale(1.05);
-  box-shadow: 0 12px 25px rgba(255,126,95,0.6);
-}
-
-.btn-teacher {
-  background: linear-gradient(45deg, #43cea2, #185a9d);
-  box-shadow: 0 8px 20px rgba(24,90,157,0.4);
-}
-
-.btn-teacher:hover {
-  background: linear-gradient(45deg, #185a9d, #43cea2);
-  transform: scale(1.05);
-  box-shadow: 0 12px 25px rgba(24,90,157,0.6);
-}
-
-.hero-img {
-  flex: 1 1 300px;
-  max-width: 350px;
-  border-radius: 30px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-  animation: float 4s ease-in-out infinite;
-}
-
-.hero-img img {
-  width: 100%;
-  border-radius: 30px;
-}
-
-/* 浮動動畫 */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-/* 主要內容區塊 */
-.main-content {
-  max-width: 1100px;
-  margin: 50px auto;
-  padding: 0 20px;
-}
-
-/* 卡片樣式 */
-.card {
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  padding: 40px 30px;
-  margin-bottom: 40px;
-  transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
-}
-
-.card h2 {
-  font-weight: 800;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.card p, .card li {
-  font-size: 1.125rem;
-  margin-bottom: 12px;
-  color: #555;
-  font-weight: 500;
-}
-
-.card ul {
-  padding-left: 20px;
-  list-style: none;
-}
-
-.card ul li {
-  position: relative;
-  padding-left: 24px;
-  margin-bottom: 15px;
-}
-
-.card ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #ff7e5f;
-  font-weight: bold;
-  font-size: 1.6rem;
-  line-height: 1;
-  top: 2px;
-}
-
-.card ol {
-  padding-left: 20px;
-  margin-bottom: 15px;
-  color: #444;
-  font-weight: 600;
-}
-
-.tip {
-  font-style: italic;
-  color: #777;
-  margin-top: 15px;
-}
-
-/* CTA 區塊 */
-.cta-section {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.cta-box {
-  flex: 1 1 350px;
-  background: #fffbf7;
-  border-radius: 20px;
-  padding: 30px 25px;
-  box-shadow: 0 10px 30px rgba(255,126,95,0.15);
-  text-align: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.cta-box:hover {
-  box-shadow: 0 14px 40px rgba(255,126,95,0.25);
-}
-
-.cta-box h3 {
-  font-weight: 900;
-  color: #ff7e5f;
-  margin-bottom: 15px;
-  font-size: 1.6rem;
-}
-
-.cta-box p {
-  font-weight: 600;
-  margin-bottom: 25px;
-  color: #6c6c6c;
-}
-
-.btn.large {
-  font-size: 1.25rem;
-  padding: 18px 50px;
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: #eee;
-  text-align: center;
-  padding: 40px 15px;
-  font-size: 0.95rem;
-  font-weight: 600;
-}
-
-footer p {
-  margin: 6px 0;
-}
-
-/* 響應式 RWD */
-@media (max-width: 900px) {
-  .hero-container {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-text h1 {
-    font-size: 2.8rem;
-  }
-
-  .btn-group {
-    justify-content: center;
-  }
-
-  .hero-img {
-    max-width: 280px;
-    margin-bottom: 30px;
-  }
-
-  .cta-section {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .btn {
-    width: 100%;
-    padding: 16px 0;
-  }
-}
+    
